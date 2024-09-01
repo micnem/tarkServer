@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors'); // Import the cors package
 const app = express();
 const port = 8080;
+require('dotenv').config();
 
 // Middleware to enable CORS
 app.use(cors());
