@@ -52,7 +52,7 @@ app.post('/getClosestParking', (req, res) => {
 
 
         const title = `Parking at ${closestParking.name}, a ${closestParking.tripDuration.text} drive away`;
-        return { title, wazeUrl: `waze://?ll=${closestParking.lat},${closestParking.long}&navigate=yes` };
+        return { title, wazeUrl: userLocation.isMobile ? `waze://?ll=${closestParking.lat},${closestParking.long}&navigate=yes` : `https://www.waze.com/ul?ll=${closestParking.lat},${closestParking.long}&navigate=yes` };
     }
     check(userLocation).then(parkingInfo => {
         res.send({ message: 'Received', content: parkingInfo });
