@@ -1,0 +1,23 @@
+{
+  "name": "tarkserver",
+  "version": "1.0.0",
+  "main": "tarkServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micnem/tark_server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/micnem/tark_server/issues"
+  },
+  "homepage": "https://github.com/micnem/tark_server#readme",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
