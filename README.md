@@ -18,11 +18,11 @@ This is a Node.js application that provides an API to find the closest parking l
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/micnem/tark_server.git
+   git clone https://github.com/micnem/tarkServer.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd tark_server
+   cd tarkServer
    ```
 3. Install the dependencies:
    ```bash
