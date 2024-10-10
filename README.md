@@ -51,4 +51,4 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 ## Contact
 
-For any inquiries, please contact [your-email@example.com](mailto:michael.nemni@gmail.com).
+For any inquiries, please contact [michael.nemni@gmail.com](mailto:michael.nemni@gmail.com).
