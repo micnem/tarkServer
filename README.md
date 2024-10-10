@@ -18,7 +18,7 @@ This is a Node.js application that provides an API to find the closest parking l
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/tark_server.git
+   git clone https://github.com/micnem/tark_server.git
    ```
 2. Navigate to the project directory:
    ```bash
