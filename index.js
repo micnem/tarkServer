@@ -1,11 +1,16 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 require('dotenv').config();
 
 app.use(cors());
 app.use(express.json());
+
+// Health check endpoint
+app.get('/', (req, res) => {
+    res.send({ status: 'ok' });
+});
 
 app.post('/getClosestParking', (req, res) => {
     async function getHasParking(lot) {
@@ -46,6 +51,17 @@ app.post('/getClosestParking', (req, res) => {
         });
 });
 
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+// Error handling middleware
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).send({ message: 'Something broke!', error: err.message });
+});
+
+// Handle 404s
+app.use((req, res) => {
+    res.status(404).send({ message: 'Route not found' });
+});
+
+app.listen(port, '0.0.0.0', () => {
+    console.log(`Server mic is running on port ${port}`);
 });
