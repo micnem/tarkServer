@@ -13,6 +13,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/getClosestParking', (req, res) => {
+    console.log('getClosestParking startedå');
     async function getHasParking(lot) {
         const url = `https://ahuzot.co.il/Parking/ParkingDetails/?ID=${lot.id}`;
         const response = await fetch(url).then(res => res.text());
