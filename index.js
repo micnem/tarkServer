@@ -26,7 +26,7 @@ app.post('/getClosestParking', (req, res) => {
             { id: 123, name: 'Arlozorov 17', lat: 32.08750, long: 34.77380 },
             { id: 122, name: 'Assuta', lat: 32.08830, long: 34.77990 },
             { id: 3, name: 'Basel', lat: 32.09000, long: 34.78010 },
-            { id: 45, name: 'Frishman', lat: 32.08500, long: 34.77760 }
+            { id: 45, name: 'Frishman', lat: 32.07969, long: 34.76917 }
         ];
 
         await Promise.all(parkingLots.map(lot => getHasParking(lot)));
