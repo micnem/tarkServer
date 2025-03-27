@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 });
 
 // Get all parking lots with their availability status
-app.get('/getAllParkingLots', (req, res) => {
+app.post('/getAllParkingLots', (req, res) => {
     console.log('getAllParkingLots started');
     async function getHasParking(lot) {
         const url = `https://ahuzot.co.il/Parking/ParkingDetails/?ID=${lot.id}`;
